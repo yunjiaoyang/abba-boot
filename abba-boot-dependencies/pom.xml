@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.abba.boot</groupId>
+        <artifactId>abba-boot</artifactId>
+        <version>2.2.4.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    <packaging>pom</packaging>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>abba-boot-dependencies</artifactId>
+
+    <properties>
+        <druid.starter.version>1.1.21</druid.starter.version>
+        <alibaba.oss.version>3.8.1</alibaba.oss.version>
+        <aliyun.sdk.core.version>4.4.9</aliyun.sdk.core.version>
+        <aliyun.sdk.dysmsapi.version>2.1.0</aliyun.sdk.dysmsapi.version>
+        <aliyun.java.sdk.dm.version>3.3.1</aliyun.java.sdk.dm.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- third dependencies -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring.boot.verion}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+             <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid.starter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.aliyun.oss</groupId>
+                <artifactId>aliyun-sdk-oss</artifactId>
+                <version>${alibaba.oss.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.aliyun</groupId>
+                <artifactId>aliyun-java-sdk-core</artifactId>
+                <version>${aliyun.sdk.core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.aliyun</groupId>
+                <artifactId>aliyun-java-sdk-dysmsapi</artifactId>
+                <version>${aliyun.sdk.dysmsapi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.aliyun</groupId>
+                <artifactId>aliyun-java-sdk-dm</artifactId>
+                <version>${aliyun.java.sdk.dm.version}</version>
+            </dependency>
+
+            <!-- Abba dependencies -->
+            <dependency>
+                <groupId>com.abba.boot</groupId>
+                <artifactId>abba-boot-autoconfigure</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <!-- Abba Plugin dependencies -->
+            <dependency>
+                <groupId>com.abba.boot</groupId>
+                <artifactId>abba-boot-plugin</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <!-- Abba Starter dependencies -->
+            <dependency>
+                <groupId>com.abba.boot</groupId>
+                <artifactId>abba-boot-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.abba.boot</groupId>
+                <artifactId>abba-boot-starter-banner</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.abba.boot</groupId>
+                <artifactId>abba-boot-starter-alibaba-oss</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.abba.boot</groupId>
+                <artifactId>abba-boot-starter-alibaba-sms</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.abba.boot</groupId>
+                <artifactId>abba-boot-starter-alibaba-mail</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>

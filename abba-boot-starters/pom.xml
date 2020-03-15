@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.abba.boot</groupId>
+        <artifactId>abba-boot-parent</artifactId>
+        <version>2.2.4.0-SNAPSHOT</version>
+        <relativePath>../abba-boot-parent</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
+    <artifactId>abba-boot-starters</artifactId>
+
+    <modules>
+        <module>abba-boot-starter</module>
+        <module>abba-boot-starter-banner</module>
+        <module>abba-boot-starter-alibaba-sms</module>
+        <module>abba-boot-starter-alibaba-oss</module>
+        <module>abba-boot-starter-alibaba-mail</module>
+    </modules>
+</project>

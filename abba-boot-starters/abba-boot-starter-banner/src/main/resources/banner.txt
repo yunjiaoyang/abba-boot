@@ -1,0 +1,6 @@
+${AnsiColor.GREEN}    // | |     //   ) )  //   ) )  // | |       .\^/.
+${AnsiColor.GREEN}   //__| |    //___/ /  //___/ /  //__| |     . |`|/| .
+${AnsiColor.GREEN}  / ___  |   / __  (   / __  (   / ___  |     |\|\|'|/|
+${AnsiColor.GREEN} //    | |  //    ) ) //    ) ) //    | |  .--'-\`|/-''--.
+${AnsiColor.GREEN}//     | | //____/ / //____/ / //     | |   \`-._\|./.-'/
+:: Based On SpringBoot Version : ${spring-boot.formatted-version} ::
