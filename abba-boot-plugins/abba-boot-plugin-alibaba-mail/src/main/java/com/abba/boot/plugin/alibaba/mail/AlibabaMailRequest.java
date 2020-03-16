@@ -1,6 +1,6 @@
 package com.abba.boot.plugin.alibaba.mail;
 
-import com.abba.boot.plugin.enums.MailContentType;
+import com.abba.boot.plugin.MailContentType;
 import lombok.Builder;
 import lombok.Data;
 

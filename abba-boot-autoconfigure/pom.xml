@@ -17,6 +17,10 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-autoconfigure</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.abba.boot</groupId>
+            <artifactId>abba-boot-common</artifactId>
+        </dependency>
 
         <!-- abba plugin dependercies -->
         <dependency>

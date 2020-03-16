@@ -24,7 +24,7 @@ public class AlibabaSmsService {
     private final String domain;
     private final String version;
     private final String signName;
-    private final IAcsClient acsClient;
+    private final IAcsClient client;
     private final ObjectMapper mapper;
 
     public AlibabaSmsService(String domain,
@@ -35,11 +35,11 @@ public class AlibabaSmsService {
         this.domain = domain;
         this.version = version;
         this.signName = signName;
-        this.acsClient = acsClient;
+        this.client = acsClient;
         this.mapper = mapper;
     }
 
-    public AlibabaSmsResponse send(AlibabaSmsRequest alibabaSmsRequest) throws AlibabaSmsException {
+    public AlibabaSmsResponse send(AlibabaSmsRequest alibabaSmsRequest) {
         if (alibabaSmsRequest == null || !alibabaSmsRequest.validate()) {
             return AlibabaSmsResponse.builder().success(false).message("Parameter verification failed ").build();
         }
@@ -51,17 +51,7 @@ public class AlibabaSmsService {
         }
     }
 
-    private IAcsClient getClient() {
-        if (this.acsClient == null) {
-            throw new AlibabaSmsException("Service not started");
-        }
-
-        return this.acsClient;
-    }
-
     private AlibabaSmsResponse doSend(AlibabaSmsRequest alibabaSmsRequest) throws ClientException, JsonProcessingException {
-        final IAcsClient client = this.getClient();
-
         CommonRequest request = new CommonRequest();
         request.setSysMethod(MethodType.POST);
         request.setSysDomain(this.domain);

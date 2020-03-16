@@ -10,6 +10,7 @@
 
     <modules>
         <module>abba-boot-dependencies</module>
+        <module>abba-boot-common</module>
         <module>abba-boot-parent</module>
         <module>abba-boot-autoconfigure</module>
         <module>abba-boot-plugins</module>

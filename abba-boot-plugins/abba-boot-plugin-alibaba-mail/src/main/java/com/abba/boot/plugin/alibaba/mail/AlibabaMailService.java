@@ -1,7 +1,7 @@
 package com.abba.boot.plugin.alibaba.mail;
 
 
-import com.abba.boot.plugin.enums.MailContentType;
+import com.abba.boot.plugin.MailContentType;
 import com.aliyuncs.IAcsClient;
 import com.aliyuncs.dm.model.v20151123.SingleSendMailRequest;
 import com.aliyuncs.dm.model.v20151123.SingleSendMailResponse;
@@ -39,7 +39,7 @@ public class AlibabaMailService {
         this.client = client;
     }
 
-    public AlibabaMailResponse sendMail(AlibabaMailRequest alibabaMailRequest) throws AlibabaMailException {
+    public AlibabaMailResponse sendMail(AlibabaMailRequest alibabaMailRequest) {
         if (alibabaMailRequest == null || !alibabaMailRequest.validate()) {
             return AlibabaMailResponse.builder().success(false).message("Parameter verification failed ").build();
         }
