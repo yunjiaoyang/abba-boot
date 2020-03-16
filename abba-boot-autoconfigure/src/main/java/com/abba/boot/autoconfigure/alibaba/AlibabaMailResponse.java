@@ -1,4 +1,4 @@
-package com.abba.boot.autoconfigure.sms;
+package com.abba.boot.autoconfigure.alibaba;
 
 import lombok.Builder;
 import lombok.Data;
@@ -7,11 +7,11 @@ import lombok.Data;
  * TODO
  *
  * @author Lucky.Yang
- * @create 2020/3/13
+ * @create 2020/3/14
  */
 @Data
 @Builder
-public class AlibabaSmsResponse {
+public class AlibabaMailResponse {
     private boolean success;
     private String message;
 }

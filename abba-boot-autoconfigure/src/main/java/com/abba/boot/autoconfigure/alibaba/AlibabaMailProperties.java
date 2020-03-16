@@ -1,4 +1,4 @@
-package com.abba.boot.autoconfigure.sms;
+package com.abba.boot.autoconfigure.alibaba;
 
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
@@ -8,28 +8,26 @@ import org.springframework.context.annotation.Configuration;
 import static org.springframework.util.StringUtils.hasText;
 
 /**
- * 配置文件
+ * TODO
  *
  * @author Lucky.Yang
- * @create 2020/3/13
+ * @create 2020/3/14
  */
+@Configuration
+@ConfigurationProperties(prefix = "alibaba.mail")
 @Data
 @Slf4j
-@Configuration
-@ConfigurationProperties(prefix = "sms.alibaba")
-public class AlibabaSmsProperties {
-
+public class AlibabaMailProperties {
     private String accessKeyId;
-
     private String secret;
+    private String accountName;
+    private boolean replyToAddress = true;
+    private int addressType = 1;
+    private String fromAlias = "Abba Mail";
+    private String tagName;
+    private String regionId;
+    private String version = "2017-06-22";
 
-    private String signName;
-
-    private String regionId = "cn-hangzhou";
-
-    private String domain = "dysmsapi.aliyuncs.com";
-
-    private String version = "2017-05-25";
 
     /**
      *
@@ -48,26 +46,20 @@ public class AlibabaSmsProperties {
             log.warn("configuration parameter 'secret' must have value");
         }
 
-        if (!hasText(this.signName)) {
+        if (!hasText(this.accountName)) {
             success = false;
-            log.warn("configuration parameter 'sign-name' must have value");
+            log.warn("configuration parameter 'account_name' must have value");
         }
 
-        if (!hasText(this.regionId)) {
+        if (hasText(this.regionId)) {
             success = false;
-            log.warn("configuration parameter 'region-id' must have value, or use default value");
+            log.warn("configuration parameter 'region_id' must have value, or use default value");
         }
 
-        if (!hasText(this.domain)) {
+        if (hasText(this.fromAlias)) {
             success = false;
-            log.warn("configuration parameter 'domain' must have value, or use default value");
+            log.warn("configuration parameter 'from_alias' must have value, or use default value");
         }
-
-        if (!hasText(this.version)) {
-            success = false;
-            log.warn("configuration parameter 'version' must have value, or use default value");
-        }
-
         return success;
     }
 }

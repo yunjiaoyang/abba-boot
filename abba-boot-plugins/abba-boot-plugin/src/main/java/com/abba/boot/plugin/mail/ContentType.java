@@ -1,4 +1,4 @@
-package com.abba.boot.autoconfigure.mail;
+package com.abba.boot.plugin.mail;
 
 /**
  * TODO

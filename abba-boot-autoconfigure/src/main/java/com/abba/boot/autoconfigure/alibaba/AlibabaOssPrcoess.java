@@ -1,4 +1,4 @@
-package com.abba.boot.autoconfigure.oss;
+package com.abba.boot.autoconfigure.alibaba;
 
 /**
  * TODO

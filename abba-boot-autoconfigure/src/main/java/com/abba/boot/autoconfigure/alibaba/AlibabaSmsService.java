@@ -1,4 +1,4 @@
-package com.abba.boot.autoconfigure.sms;
+package com.abba.boot.autoconfigure.alibaba;
 
 
 

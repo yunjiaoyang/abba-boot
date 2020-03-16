@@ -1,4 +1,4 @@
-package com.abba.boot.autoconfigure.sms;
+package com.abba.boot.autoconfigure.alibaba;
 
 import com.aliyuncs.dysmsapi.model.v20170525.SendSmsRequest;
 import com.fasterxml.jackson.databind.ObjectMapper;

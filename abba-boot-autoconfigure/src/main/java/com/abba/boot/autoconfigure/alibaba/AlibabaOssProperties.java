@@ -1,4 +1,4 @@
-package com.abba.boot.autoconfigure.oss;
+package com.abba.boot.autoconfigure.alibaba;
 
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
@@ -15,7 +15,7 @@ import static org.springframework.util.StringUtils.hasText;
  */
 
 @Configuration
-@ConfigurationProperties(prefix = "oss.alibaba")
+@ConfigurationProperties(prefix = "alibaba.oss")
 @Data
 @Slf4j
 public class AlibabaOssProperties {

@@ -1,4 +1,4 @@
-package com.abba.boot.autoconfigure.oss;
+package com.abba.boot.autoconfigure.alibaba;
 
 
 import com.abba.boot.plugin.lang.AbbaBootException;

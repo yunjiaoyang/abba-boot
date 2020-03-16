@@ -1,4 +1,4 @@
-package com.abba.boot.autoconfigure.oss;
+package com.abba.boot.autoconfigure.alibaba;
 
 import com.aliyun.oss.event.ProgressEvent;
 import com.aliyun.oss.event.ProgressEventType;

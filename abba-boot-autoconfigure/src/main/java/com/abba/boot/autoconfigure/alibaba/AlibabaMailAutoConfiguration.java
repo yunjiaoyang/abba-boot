@@ -1,4 +1,4 @@
-package com.abba.boot.autoconfigure.mail;
+package com.abba.boot.autoconfigure.alibaba;
 
 import com.aliyuncs.IAcsClient;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;

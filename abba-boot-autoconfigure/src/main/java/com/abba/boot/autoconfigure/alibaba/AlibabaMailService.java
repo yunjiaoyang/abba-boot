@@ -1,6 +1,6 @@
-package com.abba.boot.autoconfigure.mail;
+package com.abba.boot.autoconfigure.alibaba;
 
-import com.abba.boot.autoconfigure.sms.AlibabaSmsException;
+import com.abba.boot.plugin.mail.ContentType;
 import com.aliyuncs.DefaultAcsClient;
 import com.aliyuncs.IAcsClient;
 import com.aliyuncs.dm.model.v20151123.SingleSendMailRequest;

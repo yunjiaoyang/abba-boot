@@ -1,5 +1,6 @@
-package com.abba.boot.autoconfigure.mail;
+package com.abba.boot.autoconfigure.alibaba;
 
+import com.abba.boot.plugin.mail.ContentType;
 import lombok.Builder;
 import lombok.Data;
 import org.springframework.util.CollectionUtils;
