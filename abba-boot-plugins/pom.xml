@@ -14,5 +14,9 @@
 
     <modules>
         <module>abba-boot-plugin</module>
+        <module>abba-boot-plugin-alibaba-mail</module>
+        <module>abba-boot-plugin-alibaba-oss</module>
+        <module>abba-boot-plugin-alibaba-sms</module>
+        <module>abba-boot-plugin-security</module>
     </modules>
 </project>

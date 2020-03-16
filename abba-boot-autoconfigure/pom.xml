@@ -24,6 +24,21 @@
             <artifactId>abba-boot-plugin</artifactId>
             <optional>true</optional>
         </dependency>
+        <dependency>
+            <groupId>com.abba.boot</groupId>
+            <artifactId>abba-boot-plugin-alibaba-mail</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>com.abba.boot</groupId>
+            <artifactId>abba-boot-plugin-alibaba-oss</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>com.abba.boot</groupId>
+            <artifactId>abba-boot-plugin-alibaba-sms</artifactId>
+            <optional>true</optional>
+        </dependency>
 
         <!-- thrid dependencies -->
         <dependency>
@@ -36,27 +51,7 @@
             <artifactId>jackson-databind</artifactId>
             <optional>true</optional>
         </dependency>
-        <dependency>
-            <groupId>com.aliyun</groupId>
-            <artifactId>aliyun-java-sdk-core</artifactId>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>com.aliyun</groupId>
-            <artifactId>aliyun-java-sdk-dysmsapi</artifactId>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>com.aliyun.oss</groupId>
-            <artifactId>aliyun-sdk-oss</artifactId>
-            <optional>true</optional>
-        </dependency>
 
-        <dependency>
-            <groupId>com.aliyun</groupId>
-            <artifactId>aliyun-java-sdk-dm</artifactId>
-            <optional>true</optional>
-        </dependency>
 
     </dependencies>
 </project>

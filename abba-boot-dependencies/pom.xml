@@ -70,6 +70,26 @@
                 <artifactId>abba-boot-plugin</artifactId>
                 <version>${project.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.abba.boot</groupId>
+                <artifactId>abba-boot-plugin-alibaba-sms</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.abba.boot</groupId>
+                <artifactId>abba-boot-plugin-alibaba-oss</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.abba.boot</groupId>
+                <artifactId>abba-boot-plugin-alibaba-mail</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.abba.boot</groupId>
+                <artifactId>abba-boot-plugin-security</artifactId>
+                <version>${project.version}</version>
+            </dependency>
 
             <!-- Abba Starter dependencies -->
             <dependency>

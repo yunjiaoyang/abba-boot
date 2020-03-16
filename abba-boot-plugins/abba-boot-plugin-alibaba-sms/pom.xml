@@ -9,9 +9,25 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>abba-boot-plugin</artifactId>
+    <artifactId>abba-boot-plugin-alibaba-sms</artifactId>
 
 <dependencies>
+    <dependency>
+        <groupId>com.abba.boot</groupId>
+        <artifactId>abba-boot-plugin</artifactId>
+        <version>${project.version}</version>
+    </dependency>
+
+    <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-databind</artifactId>
+    </dependency>
+
+    <dependency>
+        <groupId>com.aliyun</groupId>
+        <artifactId>aliyun-java-sdk-core</artifactId>
+    </dependency>
+
     <dependency>
         <groupId>org.projectlombok</groupId>
         <artifactId>lombok</artifactId>
@@ -19,14 +35,10 @@
     </dependency>
 
     <dependency>
-        <groupId>org.apache.commons</groupId>
-        <artifactId>commons-lang3</artifactId>
-    </dependency>
-
-    <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-test</artifactId>
         <scope>test</scope>
     </dependency>
+
 </dependencies>
 </project>
