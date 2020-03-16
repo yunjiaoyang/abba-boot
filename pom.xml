@@ -10,7 +10,6 @@
 
     <modules>
         <module>abba-boot-dependencies</module>
-        <module>abba-boot-common</module>
         <module>abba-boot-parent</module>
         <module>abba-boot-autoconfigure</module>
         <module>abba-boot-plugins</module>
@@ -20,4 +19,11 @@
     <properties>
         <spring.boot.verion>2.2.4.RELEASE</spring.boot.verion>
     </properties>
+
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
 </project>

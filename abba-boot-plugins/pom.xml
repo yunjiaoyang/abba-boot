@@ -17,5 +17,6 @@
         <module>abba-boot-plugin-alibaba-mail</module>
         <module>abba-boot-plugin-alibaba-oss</module>
         <module>abba-boot-plugin-alibaba-sms</module>
+        <module>abba-boot-plugin-fastdfs</module>
     </modules>
 </project>

@@ -1,4 +1,4 @@
-package com.abba.boot.common.lang;
+package com.abba.boot.plugin.lang;
 
 /**
  * 异常

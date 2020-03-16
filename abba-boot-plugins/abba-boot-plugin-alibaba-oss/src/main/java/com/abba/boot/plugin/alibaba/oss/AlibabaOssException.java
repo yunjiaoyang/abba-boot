@@ -1,7 +1,7 @@
 package com.abba.boot.plugin.alibaba.oss;
 
 
-import com.abba.boot.common.lang.AbbaBootException;
+import com.abba.boot.plugin.lang.AbbaBootException;
 
 /**
  * TODO

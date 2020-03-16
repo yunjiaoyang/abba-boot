@@ -1,6 +1,5 @@
 package com.abba.boot.plugin.alibaba.mail;
 
-import com.abba.boot.plugin.MailContentType;
 import lombok.Builder;
 import lombok.Data;
 
@@ -18,7 +17,18 @@ import static org.apache.commons.lang3.StringUtils.isBlank;
 @Data
 @Builder
 public class AlibabaMailRequest {
-    private MailContentType contentType;
+    public enum ContentType {
+        /**
+         * html content
+         */
+        HTML,
+        /**
+         * text content
+         */
+        TEXT
+    }
+
+    private ContentType contentType;
     private String content;
     private List<String> toAddress;
     private String fromAlias;

@@ -17,10 +17,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-autoconfigure</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.abba.boot</groupId>
-            <artifactId>abba-boot-common</artifactId>
-        </dependency>
 
         <!-- abba plugin dependercies -->
         <dependency>
@@ -41,6 +37,11 @@
         <dependency>
             <groupId>com.abba.boot</groupId>
             <artifactId>abba-boot-plugin-alibaba-sms</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>com.abba.boot</groupId>
+            <artifactId>abba-boot-plugin-fastdfs</artifactId>
             <optional>true</optional>
         </dependency>
 

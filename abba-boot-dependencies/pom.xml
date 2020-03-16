@@ -18,6 +18,7 @@
         <aliyun.sdk.core.version>4.4.9</aliyun.sdk.core.version>
         <aliyun.sdk.dysmsapi.version>2.1.0</aliyun.sdk.dysmsapi.version>
         <aliyun.java.sdk.dm.version>3.3.1</aliyun.java.sdk.dm.version>
+        <fastdfs.client.version>1.29-SNAPSHOT</fastdfs.client.version>
     </properties>
 
     <dependencyManagement>
@@ -57,6 +58,12 @@
                 <version>${aliyun.java.sdk.dm.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>org.csource</groupId>
+                <artifactId>fastdfs-client-java</artifactId>
+                <version>${fastdfs.client.version}</version>
+            </dependency>
+
             <!-- Abba dependencies -->
             <dependency>
                 <groupId>com.abba.boot</groupId>
@@ -93,7 +100,7 @@
             </dependency>
             <dependency>
                 <groupId>com.abba.boot</groupId>
-                <artifactId>abba-boot-plugin-security</artifactId>
+                <artifactId>abba-boot-plugin-fastdfs</artifactId>
                 <version>${project.version}</version>
             </dependency>
 

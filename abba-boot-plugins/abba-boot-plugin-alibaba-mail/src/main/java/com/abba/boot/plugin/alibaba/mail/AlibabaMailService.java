@@ -1,14 +1,15 @@
 package com.abba.boot.plugin.alibaba.mail;
 
 
-import com.abba.boot.plugin.MailContentType;
 import com.aliyuncs.IAcsClient;
 import com.aliyuncs.dm.model.v20151123.SingleSendMailRequest;
 import com.aliyuncs.dm.model.v20151123.SingleSendMailResponse;
 import com.aliyuncs.exceptions.ClientException;
 import com.aliyuncs.http.MethodType;
 
-import static org.apache.commons.lang3.StringUtils.*;
+import static org.apache.commons.lang3.ObjectUtils.isEmpty;
+import static org.apache.commons.lang3.ObjectUtils.isNotEmpty;
+
 
 /**
  * TODO
@@ -61,7 +62,7 @@ public class AlibabaMailService {
 
         final String fromAlias = getDefaultValue(alibabaMailRequest.getFromAlias(), this.fromAlias);
         final String tagName = getDefaultValue(alibabaMailRequest.getTagName(), this.tagName);
-        if (isNotBlank(tagName)) {
+        if (isNotEmpty(tagName)) {
             request.setTagName(tagName);
         }
 
@@ -78,8 +79,8 @@ public class AlibabaMailService {
         return value == null ? defaultValue : value;
     }
 
-    private void switchBody(SingleSendMailRequest request, String content, MailContentType contentType) {
-        MailContentType type = contentType == null ? MailContentType.TEXT : contentType;
+    private void switchBody(SingleSendMailRequest request, String content, AlibabaMailRequest.ContentType contentType) {
+        AlibabaMailRequest.ContentType type = contentType == null ? AlibabaMailRequest.ContentType.TEXT : contentType;
         switch (type) {
             case HTML:
                 request.setHtmlBody(content);
