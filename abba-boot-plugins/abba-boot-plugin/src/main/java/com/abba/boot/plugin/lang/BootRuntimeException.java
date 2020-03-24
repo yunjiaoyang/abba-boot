@@ -6,11 +6,11 @@ package com.abba.boot.plugin.lang;
  * @author Lucky.Yang
  * @create 2020/3/13
  */
-public class AbbaBootException extends RuntimeException {
+public class BootRuntimeException extends RuntimeException {
     /**
      *
      */
-    public AbbaBootException() {
+    public BootRuntimeException() {
         super();
     }
 
@@ -18,7 +18,7 @@ public class AbbaBootException extends RuntimeException {
      *
      * @param message
      */
-    public AbbaBootException(String message) {
+    public BootRuntimeException(String message) {
         super(message);
     }
 
@@ -27,7 +27,7 @@ public class AbbaBootException extends RuntimeException {
      * @param message
      * @param cause
      */
-    public AbbaBootException(String message, Throwable cause) {
+    public BootRuntimeException(String message, Throwable cause) {
         super(message, cause);
     }
 
@@ -35,7 +35,7 @@ public class AbbaBootException extends RuntimeException {
      *
      * @param cause
      */
-    public AbbaBootException(Throwable cause) {
+    public BootRuntimeException(Throwable cause) {
         super(cause);
     }
 

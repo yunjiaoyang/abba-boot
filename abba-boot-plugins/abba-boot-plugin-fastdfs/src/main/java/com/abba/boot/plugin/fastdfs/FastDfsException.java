@@ -1,6 +1,6 @@
 package com.abba.boot.plugin.fastdfs;
 
-import com.abba.boot.plugin.lang.AbbaBootException;
+import com.abba.boot.plugin.lang.BootRuntimeException;
 
 /**
  * TODO
@@ -8,7 +8,7 @@ import com.abba.boot.plugin.lang.AbbaBootException;
  * @author Lucky.Yang
  * @create 2020/3/16
  */
-public class FastDfsException extends AbbaBootException {
+public class FastDfsException extends BootRuntimeException {
     public FastDfsException(Throwable cause) {
         super(cause);
     }

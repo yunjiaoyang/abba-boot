@@ -1,7 +1,7 @@
 package com.abba.boot.plugin.alibaba.oss;
 
 
-import com.abba.boot.plugin.lang.AbbaBootException;
+import com.abba.boot.plugin.lang.BootRuntimeException;
 
 /**
  * TODO
@@ -9,7 +9,7 @@ import com.abba.boot.plugin.lang.AbbaBootException;
  * @author Lucky.Yang
  * @create 2020/3/13
  */
-public class AlibabaOssException extends AbbaBootException {
+public class AlibabaOssException extends BootRuntimeException {
     public AlibabaOssException(String message) {
         super(message);
     }
